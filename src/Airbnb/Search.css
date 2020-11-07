@@ -1,0 +1,80 @@
+.search {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 35px;
+  /* left: 25%; */
+  width: 100vw;
+  z-index: 1;
+}
+.search > h2 {
+  margin-top: -35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 558px;
+  padding: 10px;
+  background-color: #fff;
+  position: absolute;
+  /* left: 0; */
+  top: 380px;
+  z-index: 1;
+}
+.search > input {
+  margin-top: -35px;
+  width: 558px;
+  padding: 20px;
+  position: absolute;
+  /* left: 0; */
+  height: 30px;
+  top: 420px;
+  border: none;
+}
+.search > input:focus {
+  outline-width: 0;
+}
+.search > .search__button > button {
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  margin-top: -55px;
+  position: absolute;
+  left: 29.6%;
+  top: 480px;
+  text-transform: inherit !important;
+  background-color: #ff7779;
+  font-weight: 500;
+  width: 558px;
+}
+.search > .search__button > button:hover {
+  background-color: white;
+  color: #ff7779;
+  font-weight: 600;
+}
+@media (max-width: 640px) {
+  .search {
+    overflow: hidden;
+    width: 100vw;
+  }
+  .date__picker {
+    margin-right: auto;
+    height: 500px;
+    width: 100vw;
+  }
+  .search > h2 {
+    width: 100vw;
+    left: 0;
+    top: 380px;
+    z-index: 1;
+  }
+  .search > input {
+    width: 100vw;
+    position: absolute;
+    left: 0;
+  }
+
+  .search > .search__button > button {
+    left: 0;
+    width: 100vw;
+  }
+}
